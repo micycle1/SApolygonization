@@ -12,7 +12,7 @@ using namespace std;
 
 #define MAX_LINE_LENGTH 32768
 
-// Variable globale pour le débogage
+// Variable globale pour le dÃ©bogage
 class GLogFile ;
 
 extern GLogFile glog ;
