@@ -14,7 +14,7 @@ uniform_int_distribution<int> d_distTriangles;
 uniform_real_distribution<double> d_dist1(0.0, 1.0);
 
 
-// Flips the edge N° c of triangle t in the triangulation. The flip is supposed to be possible.
+// Flips the edge NÂ° c of triangle t in the triangulation. The flip is supposed to be possible.
 void Triangulation::flip(Triangle *t, int c)
 {
     Triangle* u=t->neighbor[c], *v1, *v3;
