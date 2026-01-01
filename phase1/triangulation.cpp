@@ -17,7 +17,7 @@ int Point::onLeft(Point *a, Point *b) const
 	return det > 0 ? 1 : det < 0 ? -1 : 0;
 }
 
-// Returns the N� of the edge that the current triangle shares with triangle a
+// Returns the N째 of the edge that the current triangle shares with triangle a
 // or -1 if the two triangles share no edge
 int Triangle::edge(Triangle *t) const
 {
@@ -133,7 +133,7 @@ Point* Triangulation::addPoint(long long x, long long y)
 
 // Adds a new triangle to the list of triangles of the triangulation.
 // The points s0, s1, and s2 are supposed to already belong to the list of points
-// of the triangulation and become respectively the vertices N�0, 1, and 2
+// of the triangulation and become respectively the vertices N째0, 1, and 2
 // of the new triangle.
 // Returns a pointer to the new triangle.
 Triangle* Triangulation::addTriangle(Point *s0, Point *s1, Point *s2, int color)
@@ -143,7 +143,7 @@ Triangle* Triangulation::addTriangle(Point *s0, Point *s1, Point *s2, int color)
 	return t;
 }
 
-// Pastes edge N컄 of triangle a on edge N컅 of triangle b.
+// Pastes edge N째i of triangle a on edge N째j of triangle b.
 // a and b are supposed to be already present in the triangle list
 // and their edges i and j are supposed to be "pastable"
 void Triangulation::pasteTriangles(Triangle *a, int i, Triangle *b, int j)
