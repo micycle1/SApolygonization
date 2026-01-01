@@ -20,10 +20,10 @@
 void GInputFile::open()
 {
     file = fopen(fileName.c_str(), "r");
-    setlocale(LC_NUMERIC, "C");  // A cause des . et , (Réglage C)
+    setlocale(LC_NUMERIC, "C");  // A cause des . et , (RÃ©glage C)
     if(!file){
         std::ostringstream output;
-        output << "Un fichier nommé ::" << fileName << " n'existe pas ou est protégé en lecture";
+        output << "Un fichier nommÃ© ::" << fileName << " n'existe pas ou est protÃ©gÃ© en lecture";
         perror("\nGInputFile::load : input file open error");
         perror(fileName.c_str());
     }
@@ -37,7 +37,7 @@ void GInputFile::open(char* st)
 void GInputFile::close()
 {
     fclose(file);
-    setlocale(LC_NUMERIC, "");  // A cause des . et , (Réglage par défaut)
+    setlocale(LC_NUMERIC, "");  // A cause des . et , (RÃ©glage par dÃ©faut)
 }
 
 /*!
